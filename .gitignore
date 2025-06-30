@@ -1,0 +1,96 @@
+# Katalon Studio specific
+.gradle/
+.cache/
+bin/
+Libs/
+Reports/
+settings/
+.classpath
+.project
+.settings/
+
+# Katalon Studio temporary files
+*.log
+*.swp
+*.tmp
+*.bak
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# IDE specific files
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.code-workspace
+
+# OS specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Execution profile temp files
+*.glbl-tmp
+
+# Test data
+*.xlsx
+*.xls
+*.csv
+*.json
+!settings/*.json
+
+# Temporary files
+temp/
+tmp/
+
+# Katalon Studio Enterprise license
+license/
+
+# Katalon Studio Project
+*.prj
+
+# Katalon Studio Execution Profiles
+Profiles/*/GlobalVariables.glbl
+
+# Katalon Studio Test Suites Collection
+Test Suites/*/Test Suites Collection.ts
+
+# Katalon Studio Test Listeners
+Test Listeners/*/Test Listeners.groovy
+
+# Katalon Studio Test Cases
+Test Cases/*/Test Cases.groovy
+
+# Katalon Studio Object Repository
+Object Repository/*/Object Repository.rs
+
+# Katalon Studio Keywords
+Keywords/*/Keywords.groovy
+
+# Katalon Studio Include
+Include/*/Include.groovy
+
+# Katalon Studio Scripts
+Scripts/*/Scripts.groovy
+
+# Katalon Studio Test Data
+Data Files/*/Data Files.dat
+
+# Katalon Studio Checkpoint
+Checkpoints/*/Checkpoints.cpt
+
+# Katalon Studio Test Objects
+Test Objects/*/Test Objects.rs
+
+# Katalon Studio Test Suites
+Test Suites/*/Test Suites.ts
+
+# Katalon Studio Test Cases
+Test Cases/*/Test Cases.tc
