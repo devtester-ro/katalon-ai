@@ -64,3 +64,8 @@ dependencies {
     }
 }
 
+task katalonRunTest(type: Exec) {
+    def testCase = project.hasProperty('testcase') ? project.getProperty('testcase') : ''
+    commandLine 'C:\\Users\\iulia\\.katalon\\packages\\KSE-10.2.3\\katalon.exe', '-noSplash', '-runMode=console', '-executionProfile=default', '-projectPath=C:\\Users\\iulia\\IdeaProjects\\katalon-ai\\katalon-api', "-testCasePath=Test Cases/${testCase}", "-apiKey=API_KEY"
+}
+

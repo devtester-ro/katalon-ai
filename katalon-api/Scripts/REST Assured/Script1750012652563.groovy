@@ -10,7 +10,9 @@ RestAssured.baseURI = 'https://petstore.swagger.io/v2';
 Response findByStatusResponse = given()
     .queryParam("status", "available")
 .when()
-    .get("/pet/findByStatus");
+    .get("/pet/findByStatus")
+
+assert findByStatusResponse.statusCode == 200 : "Expected status code 200, got ${findByStatusResponse.statusCode}"
 
 // Parse the JSON response
 def jsonResponse = new JsonSlurper().parseText(findByStatusResponse.asString());
@@ -26,6 +28,8 @@ if (jsonResponse && jsonResponse.size() > 0) {
         .pathParam("petId", firstPetId)
     .when()
         .get("/pet/{petId}");
+
+    assert getPetResponse.statusCode == 200 : "Expected status code 200, got ${getPetResponse.statusCode}"
 
     // Parse and print the details of the first pet
     def petDetails = new JsonSlurper().parseText(getPetResponse.asString());
