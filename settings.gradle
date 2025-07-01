@@ -1,0 +1,9 @@
+// Root settings.gradle for katalon-ai project
+// This file defines the subprojects that are part of the build
+
+rootProject.name = 'katalon-ai'
+
+// Include all subprojects
+include 'katalon-api'
+include 'katalon-web'
+include 'katalon-android'

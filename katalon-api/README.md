@@ -1,10 +1,10 @@
-# REST Assured Petstore
+# Katalon API - REST Assured Petstore
 
-A Katalon Studio project demonstrating REST API testing using REST Assured library with the Swagger Petstore API.
+> **Note:** This project is part of the [Katalon AI](../README.md) unified testing framework.
 
 ## Overview
 
-This project contains automated API tests for the Swagger Petstore API, showcasing various REST API testing scenarios including:
+This project demonstrates REST API testing using the REST Assured library with the Swagger Petstore API. It contains automated API tests showcasing various REST API testing scenarios including:
 
 - Pet management (create, update, delete, find by status/tags)
 - Store operations (inventory, orders)

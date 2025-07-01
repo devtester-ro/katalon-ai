@@ -1,0 +1,31 @@
+// Root build.gradle for katalon-ai project
+// This file defines common configuration for all subprojects
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+// Common configuration that will be applied to all subprojects
+subprojects {
+    // Apply common plugins if needed
+    apply plugin: 'java-library'
+    apply plugin: 'groovy'
+    
+    // Common dependencies if needed
+    dependencies {
+        // Common dependencies can be defined here
+    }
+    
+    // Common configurations if needed
+    configurations {
+        all*.exclude group: 'org.codehaus.groovy'
+    }
+}

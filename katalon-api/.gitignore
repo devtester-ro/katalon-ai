@@ -11,14 +11,15 @@ out/
 
 # Katalon Studio
 bin/
-Libs/
 Reports/
+Drivers/
 .settings/
 .classpath
 .project
 tmp/
 Include/scripts/groovy/.classpath
 Include/scripts/groovy/.project
+entityReference.index
 
 # OS files
 .DS_Store
