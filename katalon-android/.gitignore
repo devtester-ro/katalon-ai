@@ -31,3 +31,4 @@ settings/internal/com.kms.katalon.integration.jira.properties
 settings/
 
 .settings/
+/bin/

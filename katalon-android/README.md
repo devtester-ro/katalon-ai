@@ -47,6 +47,39 @@ katalon-android/
 3. Connect an Android device or start an emulator
 4. Install the sample application on the device/emulator
 
+### Setting Up Android Environment
+
+#### 1. Install Android Studio
+- Download and install Android Studio from [developer.android.com/studio](https://developer.android.com/studio)
+- Follow the installation wizard to complete the setup
+- Make sure to install the Android SDK during the setup process
+
+#### 2. Set Up Android Virtual Device (AVD)
+- Open Android Studio
+- Go to Tools -> Device Manager or visit [developer.android.com/studio/run/managing-avds](https://developer.android.com/studio/run/managing-avds)
+- Click "Create Virtual Device" and follow the wizard to create an emulator
+- Select a device definition (e.g., Pixel 4)
+- Select a system image (recommended: x86 images for better performance)
+- Configure the AVD options and finish the creation
+
+#### 3. Set Up Appium
+- Make sure you have Node.js and NPM installed
+- Install Appium globally:
+  ```bash
+  npm install -g appium
+  ```
+- Install the required driver for Android:
+  ```bash
+  appium driver install uiautomator2
+  ```
+
+#### 4. Running Tests with Android Emulator
+- Start your Android emulator from Android Studio's Device Manager
+- In Katalon Studio, select your test case
+- Choose "Android" as the device type
+- Select your emulator from the device list
+- Run the test
+
 ### Executing a Test Case
 
 ![Execute a simple test case](https://github.com/katalon-studio-samples/android-mobile-tests/blob/master/Tutorials/Figures/_Execute%20a%20test%20case.png?raw=true)
