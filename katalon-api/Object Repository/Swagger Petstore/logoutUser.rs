@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>logoutUser</name>
+   <tag></tag>
+   <elementGuidId>b76176c0-3d4b-488b-b0a7-b97e852c8693</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>1a50e424-57b4-4486-846e-96c98bb53130</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-type</name>
+      <type>Main</type>
+      <value>application/xml</value>
+      <webElementGuid>4ba8df66-1284-4349-811f-bb82ec7597cc</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>10.2.0</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <path>/user/logout</path>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>https://petstore.swagger.io/v2/user/logout</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

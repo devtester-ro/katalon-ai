@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REST Assured</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f2265d69-2a5b-4c69-833e-9afbfe8c16f9</testCaseGuid>
+</TestCaseEntity>
