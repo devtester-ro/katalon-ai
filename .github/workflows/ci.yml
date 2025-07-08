@@ -46,7 +46,7 @@ jobs:
       run: ./gradlew buildAll
       
     - name: Archive test results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: test-results
@@ -55,7 +55,7 @@ jobs:
           **/build/test-results/
           
     - name: Archive checkstyle results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: checkstyle-results
@@ -101,7 +101,7 @@ jobs:
       run: ./gradlew testAll
       
     - name: Archive integration test results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: integration-test-results
