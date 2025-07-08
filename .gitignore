@@ -1,3 +1,40 @@
 .idea/
 lib/
 .gradle/
+
+# Build artifacts
+build/
+bin/
+out/
+**/build/
+**/bin/
+**/out/
+
+# Gradle wrapper jar (if not checked in)
+gradle-wrapper.jar
+
+# Test results and reports
+**/reports/
+**/test-results/
+
+# Generated Katalon files that can be regenerated
+**/Libs/internal/
+**/Libs/CustomKeywords.groovy
+
+# Temporary files
+*.tmp
+*.temp
+**/tmp/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# IDE files
+*.iml
+*.iws
+*.ipr
+.vscode/
+
+# Log files
+*.log

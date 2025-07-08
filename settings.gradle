@@ -3,6 +3,9 @@
 
 rootProject.name = 'katalon-ai'
 
+// Include shared utilities module
+include 'katalon-shared-utils'
+
 // Include all subprojects
 include 'katalon-api'
 include 'katalon-web'

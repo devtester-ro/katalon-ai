@@ -37,6 +37,9 @@ configurations {
 }
 
 dependencies {
+    // Shared utilities module
+    implementation project(':katalon-shared-utils')
+    
     // Web testing dependencies
     implementation('org.seleniumhq.selenium:selenium-java:3.141.59') {
         exclude group: 'org.apache.groovy', module: 'groovy'

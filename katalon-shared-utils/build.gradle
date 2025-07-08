@@ -1,0 +1,57 @@
+plugins {
+    id 'java-library'
+    id 'groovy'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        groovy {
+            srcDirs = ['src/main/groovy']
+        }
+    }
+    test {
+        groovy {
+            srcDirs = ['src/test/groovy']
+        }
+    }
+}
+
+configurations {
+    all*.exclude group: 'org.codehaus.groovy'
+}
+
+dependencies {
+    // Groovy runtime
+    implementation 'org.apache.groovy:groovy:4.0.6'
+    implementation 'org.apache.groovy:groovy-json:4.0.6'
+    
+    // Core dependencies that were missing
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'commons-io:commons-io:2.11.0'
+    
+    // JUnit for testing framework
+    implementation 'junit:junit:4.13.2'
+    
+    // Dependency Injection with Guice
+    api 'com.google.inject:guice:5.1.0'
+    
+    // For HTTP/REST operations
+    api 'org.apache.httpcomponents:httpclient:4.5.13'
+    api 'com.fasterxml.jackson.core:jackson-databind:2.13.4'
+    
+    // Testing dependencies
+    testImplementation 'org.spockframework:spock-core:2.3-groovy-4.0'
+}
+
+// Configuration for publishing to other subprojects
+group = 'com.katalon.ai'
+version = '1.0.0'
+
+jar {
+    archiveBaseName = 'katalon-shared-utils'
+    from sourceSets.main.output
+}
