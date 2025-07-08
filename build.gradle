@@ -23,6 +23,8 @@ subprojects {
     
     // Common dependencies if needed
     dependencies {
+        // Groovy runtime for all projects
+        implementation 'org.apache.groovy:groovy:4.0.6'
         // Common dependencies can be defined here
     }
     
