@@ -37,6 +37,9 @@ configurations {
 }
 
 dependencies {
+    // Shared utilities module
+    implementation project(':katalon-shared-utils')
+    
     // REST Assured Core Dependencies (excluding Groovy)
     implementation('io.rest-assured:rest-assured:3.3.0') {
         exclude group: 'org.apache.groovy', module: 'groovy'

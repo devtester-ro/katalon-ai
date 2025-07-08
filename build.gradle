@@ -4,6 +4,7 @@
 buildscript {
     repositories {
         mavenCentral()
+        gradlePluginPortal()
     }
 }
 
@@ -18,6 +19,7 @@ subprojects {
     // Apply common plugins if needed
     apply plugin: 'java-library'
     apply plugin: 'groovy'
+    apply plugin: 'checkstyle'
     
     // Common dependencies if needed
     dependencies {
@@ -28,4 +30,37 @@ subprojects {
     configurations {
         all*.exclude group: 'org.codehaus.groovy'
     }
+    
+    // Code quality configuration
+    checkstyle {
+        toolVersion = '8.45'
+        configFile = rootProject.file('config/checkstyle/checkstyle.xml')
+        ignoreFailures = false
+        maxWarnings = 0
+    }
+    
+    // Java/Groovy source compatibility
+    java {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+}
+
+// Root level tasks
+task codeQualityCheck {
+    group = 'verification'
+    description = 'Runs all code quality checks across all subprojects'
+    dependsOn subprojects*.checkstyleMain
+}
+
+task buildAll {
+    group = 'build'
+    description = 'Builds all subprojects'
+    dependsOn subprojects*.build
+}
+
+task testAll {
+    group = 'verification'
+    description = 'Runs tests for all subprojects'
+    dependsOn subprojects*.test
 }

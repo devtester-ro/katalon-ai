@@ -37,6 +37,9 @@ configurations {
 }
 
 dependencies {
+    // Shared utilities module
+    implementation project(':katalon-shared-utils')
+    
     // Android testing dependencies
     implementation('io.appium:java-client:7.3.0') {
         exclude group: 'org.apache.groovy', module: 'groovy'
